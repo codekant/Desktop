@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_static/tw.css">
+    <link rel="stylesheet" href="_static/custom.css">
+    <link rel="stylesheet" href="_static/fontawesome/css/all.css">
+    <title>Desktop</title>
+    <script src="_static/jquery.min.js"></script>
+    <script src="_static/client.js"></script>
+</head>
+<body>
+    <div class="w-full h-full fixed z-50 loading" id="loading">
+        <div class="text-center mt-32" id="ltxt">
+            <p class="text-4xl">
+                <i class="fal fa-circle-notch fa-spin mr-1"></i> Getting things ready
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <video id="bgv" muted class="fixed h-full w-full">
+            <source src="_win/windows_bgv.webm" type="video/webm">
+        </video>
+        <div class="startmenu">
+
+        </div>
+        <div id="taskbar" class="taskbar fixed bottom-0 h-12 w-full">
+            <div id="taskbar_items" class="taskbar-items">
+                <img draggable="false" class="taskbar-icon rounded-sm" src="_win/icons/start.png" id="start" ttle="Start">
+                <img draggable="false" class="taskbar-icon" src="_win/icons/fileexp.png" id="fileExploerer" title="File Explorer">
+                <img draggable="false" class="taskbar-icon" src="_win/icons/chrome.png" id="chrome" title="Chrome">
+                <img draggable="false" class="taskbar-icon" src="_win/icons/spotify.png" id="spotify" title="Spotify">
+                <img draggable="false" class="taskbar-icon" src="_win/icons/notepad.png" id="notepad" title="Notepad">
+                <img draggable="false" class="taskbar-icon" src="_win/icons/settings.png" id="settings" title="Settings">
+            </div>
+            <div id="taskbar_right" class="taskbar-right">
+                <div class="taskbar-right-items">
+                    <p class="taskbar-right-item pt-3.5 text-sm"><i class="fal fa-moon"></i></p>
+                    <p class="taskbar-right-item text-xs text-right pt-2" id="time">00:00<br>00-00-0000</p>
+                    <p class="taskbar-right-item pt-3 mr-1 text-sm"><i class="fal fa-volume-up"></i></p>
+                    <p class="taskbar-right-item pt-3 text-sm"><i class="fal fa-wifi"></i></p>
+                    <p class="taskbar-right-item pt-1.5 text-2xl mr-1"><i class="fal fa-angle-up"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "desktop?",
+  "main": "-",
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./_dev/tw.css -o ./_static/tw.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/codekant/desktop"
+  },
+  "keywords": [
+    "desktop"
+  ],
+  "author": "Kant",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
