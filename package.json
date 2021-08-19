@@ -4,7 +4,7 @@
   "description": "desktop?",
   "main": "-",
   "scripts": {
-    "tw:build": "npx tailwindcss -i ./_dev/tw.css -o ./_static/tw.css"
+    "tw:build": "npx tailwindcss -i ./_dev/tw.css -o ./static/tw.css"
   },
   "repository": {
     "type": "git",

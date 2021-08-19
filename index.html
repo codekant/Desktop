@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_static/tw.css">
-    <link rel="stylesheet" href="_static/custom.css">
-    <link rel="stylesheet" href="_static/fontawesome/css/all.css">
+    <link rel="stylesheet" href="static/tw.css">
+    <link rel="stylesheet" href="static/custom.css">
+    <link rel="stylesheet" href="static/fontawesome/css/all.css">
     <title>Desktop</title>
-    <script src="_static/jquery.min.js"></script>
-    <script src="_static/client.js"></script>
+    <script src="static/jquery.min.js"></script>
+    <script src="static/client.js"></script>
 </head>
 <body>
     <div class="w-full h-full fixed z-50 loading" id="loading">
         <div class="text-center mt-32" id="ltxt">
-            <p class="text-4xl">
-                <i class="fal fa-circle-notch fa-spin mr-1"></i> Getting things ready
+            <p class="text-2xl">
+                <i class="fas fa-circle-notch fa-spin fa-2x"></i><br><br>
+                Getting Windows ready<br>
+                Don't close this tab
             </p>
         </div>
     </div>
     <div class="container">
-        <video id="bgv" muted class="fixed h-full w-full">
-            <source src="_win/windows_bgv.webm" type="video/webm">
+        <video id="bgv" muted class="fixed h-full w-full z-10">
+            <source src="win/windows_bgv.webm" type="video/webm">
         </video>
-        <div class="startmenu">
-
+        <div class="startmenu z-20">
+            <div class="content">
+                <input class="search" placeholder="Type here to search">
+                <div class="pinned">
+                    <div class="px-4 mt-6">
+                        <strong>Pinned</strong>
+                        <button class="pinnedbtn">All apps <i class="fal fa-chevron-right fa-xs ml-2"></i></button>
+                    </div>
+                    <div class="apps grid grid-cols-6 gap-0 mt-3">
+                        <div class="app">
+                            <img class="icon" src="win/icons/fileexp.png">
+                            <p class="text-xs mt-1">File Explorer</p>
+                        </div>
+                        <div class="app">
+                            <img class="icon" src="win/icons/chrome.png">
+                            <p class="text-xs mt-1">Chrome</p>
+                        </div>
+                        <div class="app">
+                            <img class="icon" src="win/icons/spotify.png">
+                            <p class="text-xs mt-1">Spotify</p>
+                        </div>
+                        <div class="app">
+                            <img class="icon" src="win/icons/notepad.png">
+                            <p class="text-xs mt-1">Notepad</p>
+                        </div>
+                        <div class="app">
+                            <img class="icon" src="win/icons/settings.png">
+                            <p class="text-xs mt-1">Settings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user">
+                <img class="rounded-2xl w-8 h-8 inline" src="static/img/kant.png">
+                <p class="text-sm inline"><span class="mr-2"></span> Kant T</p>
+                <p class="inline float-right"><i class="fal fa-power-off"></i></p>
+            </div>
         </div>
-        <div id="taskbar" class="taskbar fixed bottom-0 h-12 w-full">
+        <div id="taskbar" class="taskbar fixed bottom-0 h-12 w-full z-30">
             <div id="taskbar_items" class="taskbar-items">
-                <img draggable="false" class="taskbar-icon rounded-sm" src="_win/icons/start.png" id="start" ttle="Start">
-                <img draggable="false" class="taskbar-icon" src="_win/icons/fileexp.png" id="fileExploerer" title="File Explorer">
-                <img draggable="false" class="taskbar-icon" src="_win/icons/chrome.png" id="chrome" title="Chrome">
-                <img draggable="false" class="taskbar-icon" src="_win/icons/spotify.png" id="spotify" title="Spotify">
-                <img draggable="false" class="taskbar-icon" src="_win/icons/notepad.png" id="notepad" title="Notepad">
-                <img draggable="false" class="taskbar-icon" src="_win/icons/settings.png" id="settings" title="Settings">
+                <img draggable="false" class="taskbar-icon rounded-sm" src="win/icons/start.png" id="start" ttle="Start">
+                <img draggable="false" class="taskbar-icon" src="win/icons/fileexp.png" id="fileExploerer" title="File Explorer">
+                <img draggable="false" class="taskbar-icon" src="win/icons/chrome.png" id="chrome" title="Chrome">
+                <img draggable="false" class="taskbar-icon" src="win/icons/spotify.png" id="spotify" title="Spotify">
+                <img draggable="false" class="taskbar-icon" src="win/icons/notepad.png" id="notepad" title="Notepad">
+                <img draggable="false" class="taskbar-icon" src="win/icons/settings.png" id="settings" title="Settings">
             </div>
             <div id="taskbar_right" class="taskbar-right">
                 <div class="taskbar-right-items">
