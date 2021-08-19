@@ -1,5 +1,4 @@
 window.onload = function() {
-    document.body.style.zoom = "100%";
     setTimeout(() => {
         $("#loading").fadeOut(500, function() {
             $("#bgv").trigger("play");
