@@ -12,11 +12,18 @@
     <script src="static/client.js"></script>
 </head>
 <body>
-    <div class="w-full h-full fixed z-50 loading" id="loading">
+    <div class="w-full h-full fixed loading" id="loading">
         <div class="text-center vcenter" id="ltxt">
             <p class="text-2xl">
                 <i class="fas fa-circle-notch fa-spin"></i>
                 <!-- ^ fa-2x -->
+            </p>
+        </div>
+    </div>
+    <div class="fixed h-full w-full mobileblockoff md:hidden">
+        <div class="text-center vcenter" id="ltxt">
+            <p class="text-2xl">
+                Sorry, Windows 11 can't run on mobile.
             </p>
         </div>
     </div>
@@ -58,8 +65,8 @@
             </div>
             <div class="user">
                 <img class="rounded-2xl w-8 h-8 inline" src="static/img/kant.png">
-                <p class="text-sm inline"><span class="mr-2"></span> Kant T</p>
-                <p class="inline float-right"><i class="fal fa-power-off"></i></p>
+                <a href="/" class="text-sm inline"><span class="mr-2"></span> Kant T</a>
+                <a href="javascript:void()" id="refresh" class="inline float-right mt-4"><i class="fal fa-power-off"></i></a>
             </div>
         </div>
         <div id="taskbar" class="taskbar fixed bottom-0 h-12 w-full z-30">

@@ -626,10 +626,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -821,6 +817,9 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

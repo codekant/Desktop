@@ -21,4 +21,5 @@ window.onload = function() {
         $(".startmenu").css("bottom", "-40rem") : 
         $(".startmenu").css("bottom", "3.5rem");
     });
+    $("#refresh").on('click', () => { location.reload() });
 }
