@@ -52,6 +52,13 @@ body {
     margin-left: .7rem;
     float: right;
 }
+.vcenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .startmenu {
     width: 42%;
     background-color: #1d1d1d;
