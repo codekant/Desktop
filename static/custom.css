@@ -71,6 +71,9 @@ body {
     position: fixed;
     transition: all .3s;
 }
+.bold {
+    font-weight: 500;
+}
 .startmenu .content {
     padding: 2rem;
 }
